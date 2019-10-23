@@ -169,6 +169,7 @@ class HousePurchase(Purchase, House):
 
 
 class Agent:
+    # dict，键是元组类型，值是类（注意，python中类可以像基本类型一样存储和传递）
     type_map = {
         ("house", "rental"): HouseRental,
         ("house", "purchase"): HousePurchase,
